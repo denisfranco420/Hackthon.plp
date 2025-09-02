@@ -1,0 +1,45 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        let name = 'denis'
+        console.log(name)
+        let message ='this is my first web page'
+        console.log(message)
+    </script>
+    <script>src= 'script.js'</script>
+    <div className="p-6 grid gap-6 max-w-2xl mx-auto">
+      <motion.h1
+        className="text-2xl font-bold text-center"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        🌍 FoodShare – Connecting Surplus with Need
+      </motion.h1>
+
+      <Card className="p-4">
+        <h2 className="text-lg font-semibold mb-2">Add a Listing</h2>
+        <div className="flex gap-2 mb-2">
+          <select
+            className="border rounded p-2"
+            value={newType}
+            onChange={(e) => setNewType(e.target.value)}
+          >
+            <option value="Surplus">Surplus</option>
+            <option value="Demand">Demand</option>
+          </select>
+          <Input
+            placeholder="e.g., Maize (20kg)"
+            value={newItem}
+            onChange={(e) => setNewItem(e.target.value)}
+          />
+          <Button onClick={addListing}>Add</Button>
+        </div>
+      </Card>
+      </head>
+</body>
+</html>
